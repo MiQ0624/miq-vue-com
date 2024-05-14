@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noLib": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vite/client", "unplugin-icons/types/vue", "element-plus/global"],
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "allowSyntheticDefaultImports": true /* 允许默认导入 */,
+    "forceConsistentCasingInFileNames": true /* 强制引用的模块文件名必须和文件名大小写一致*/,
+
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "mock/**/*.ts",
+    "vite.config.ts",
+    "api/**/*.ts",
+    "src/typing/*.d.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}

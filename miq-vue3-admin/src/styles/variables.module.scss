@@ -1,0 +1,11 @@
+/* stylelint-disable property-no-unknown */
+// src/styles/variables.scss 导入的 SCSS 全局变量在 TypeScript 不生效的，需要创建一个以 .module.scss 结尾的文件
+:export {
+  sidebar-width: $sidebar-width;
+  navbar-height: $navbar-height;
+  menu-background: $menu-background;
+  menu-text: $menu-text;
+  menu-active-text: $menu-active-text;
+  menu-hover: $menu-hover;
+}
+/* stylelint-enable property-no-unknown */
